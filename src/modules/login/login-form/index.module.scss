@@ -1,0 +1,34 @@
+.LoginForm{
+  ul{
+    position: relative;
+    gap: 20px;
+    li{
+      position: relative;
+      list-style: none;
+ 
+    }
+  }
+  &__loginAccount{
+    position: relative;
+    font-size: 3rem;
+    line-height: 2em;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--clr);
+    &::before{
+      content: attr(data-text);
+      position: absolute;
+      color: var(--clr);
+      width: 0;
+      overflow: hidden;
+      transition: 0.5s;
+      border-right: 4px solid var(--clr);
+      height: 90%;
+    }
+    &:hover::before{
+      width:110%;
+      filter: drop-shadow(0 0 25px var(--clr));
+    }
+  }
+
+}
