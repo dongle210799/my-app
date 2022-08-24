@@ -1,4 +1,0 @@
-export default function Login() {
-  console.log("ok")
-  return <div className="text-red-500 bg-slate-500">Login </div>
-}
